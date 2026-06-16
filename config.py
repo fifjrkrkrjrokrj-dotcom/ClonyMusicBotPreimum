@@ -28,6 +28,9 @@ API_KEY = getenv("API_KEY", "NxGBNexGenBotsd9b09f") # youtube song api key, gene
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
+SHRUTI_API_URL = "https://api.shrutibots.site"
+SHRUTI_API_KEY = "ShrutiBotstTEkw9aYIM0PmSJtklYl"
+
 LOGGER_ID = int(getenv("LOGGER_ID", "0"))
 CLONE_LOGGER = LOGGER_ID
 
