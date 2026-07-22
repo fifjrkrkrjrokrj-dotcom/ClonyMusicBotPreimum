@@ -1,20 +1,3 @@
-# ───────────────────────────────
-# YouTube Download Functions
-# ───────────────────────────────
-
-# Step 1: Get your API key
-# Go to Telegram and open @InflexAPIBot
-# 1️⃣ Start the bot
-# 2️⃣ Follow the instructions to get your personal API key
-# 3️⃣ Copy the key
-
-# Step 2: Replace API_KEY below with your key
-# Step 3: Optionally, change API_URL if different
-
-API_URL = "https://teaminflex.xyz"  # <-- Keep as is unless bot provides a different URL
-API_KEY = "INFLEX49143828D"  # <-- Replace this with your key from @InflexAPIBot
-
-
 import asyncio
 import os
 import re
@@ -25,8 +8,9 @@ from pyrogram.types import Message
 from py_yt import VideosSearch, Playlist
 import aiohttp
 
-API_URL = "https://teaminflex.xyz"  # <-- Keep as is unless bot provides a different URL
-API_KEY = "INFLEX49143828D"  # <-- Replace this with your key from @InflexAPIBot
+API_URL = os.environ.get("SHRUTI_API_URL", "https://api.shrutibots.site")
+
+API_KEY = os.environ.get("SHRUTI_API_KEY", "ShrutiBotstTEkw9aYIM0PmSJtklYl") ## Get This API KEY FROM TELEGRAM BOT USERNAME: @SHRUTIAPIBOT 
 
 DOWNLOAD_DIR = "downloads"
 
